@@ -1,0 +1,51 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: vw(35);
+	z-index: 50;
+	width: 100%;
+
+	.container {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__menu {
+		ul {
+			list-style-type: none;
+			font-size: 0;
+
+			li {
+				display: inline-block;
+
+				a {
+					position: relative;
+					display: inline-block;
+					margin-right: vw(73);
+					font-family: $font-family-reg;
+					font-size: vw(18);
+					text-transform: uppercase;
+					color: $color-white;
+
+					&::before {
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: vw(-2);
+						width: 0;
+						height: vw(2);
+						background-color: $color-white;
+						transition: width 0.15s;
+					}
+
+					&:hover {
+						&::before {
+							width: 100%;
+							transition: width 0.15s;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.first__screen {
+	position: relative;
+	padding-top: vw(170);
+	height: vw(1080);
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&-heading {
+		margin: 0 auto;
+		width: vw(1589);
+		height: vw(214);
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&-date {
+		margin-top: vw(88);
+		width: 100%;
+		font-family: $font-family-reg;
+		font-size: vw(30);
+		color: $color-white;
+	}
+
+	&-buttons {
+		display: flex;
+		align-items: center;
+		margin-top: vw(57);
+		width: 100%;
+	}
+
+	&-tickets {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid $color-white;
+		width: vw(300);
+		height: vw(60);
+		font-family: $font-family-reg;
+		font-size: vw(20);
+		text-transform: uppercase;
+		color: $color-white;
+		transition: all 0.15s;
+
+		&:hover {
+			color: $color-black;
+			background-color: $color-white;
+			transition: all 0.15s;
+		}
+	}
+
+	&-play {
+		display: inline-block;
+		margin-left: vw(54);
+		padding: vw(5) vw(46);
+		padding-right: 0;
+		font-family: $font-family-reg;
+		font-size: vw(20);
+		text-transform: uppercase;
+		color: $color-white;
+		background-image: url("../images/play.png");
+		background-position: left center;
+		background-size: vw(26) vw(26);
+		background-repeat: no-repeat;
+	}
+
+	&-descr {
+		margin-top: vw(140);
+		max-width: vw(320);
+		font-family: $font-family-reg;
+		font-size: vw(13);
+		line-height: vw(30);
+		color: $color-white;
+	}
+
+	&-arrow {
+		margin-top: vw(60);
+		width: 100%;
+
+		svg {
+			display: block;
+			width: vw(81);
+			height: vw(10);
+		}
+	}
+}

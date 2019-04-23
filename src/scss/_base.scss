@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	outline: none;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.is-outer {
+	position: absolute !important; // stylelint-disable-line declaration-no-important
+	left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.site-container {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: vw(1580);
+}
